@@ -8,6 +8,10 @@
     box-sizing: border-box;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 :root {
     --dark-bg: #0a0a0a;
     --darker-bg: #050505;
@@ -25,6 +29,8 @@ body {
     color: var(--light-text);
     line-height: 1.6;
     overflow-x: hidden;
+    width: 100%;
+    position: relative;
 }
 
 .container {
@@ -1004,6 +1010,23 @@ body {
 
 /* Small tablets and large phones (max-width: 768px) */
 @media (max-width: 768px) {
+    /* Container */
+    .container {
+        max-width: 100%;
+        padding: 0 15px;
+        overflow-x: hidden;
+    }
+
+    /* Header - ensure it stays fixed */
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        z-index: 1000;
+    }
+
     /* Navigation */
     .nav-menu {
         position: fixed;
