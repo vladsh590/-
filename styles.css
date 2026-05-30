@@ -1079,6 +1079,15 @@ body {
         gap: 2rem;
     }
 
+    .about-text h3 {
+        font-size: 1.5rem;
+    }
+
+    .about-text p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+
     .about-intro p {
         font-size: 1.1rem;
         padding: 1.5rem 2rem;
@@ -1094,6 +1103,14 @@ body {
         align-items: flex-start;
         text-align: left;
         gap: 1.5rem;
+    }
+
+    .feature h3 {
+        font-size: 1.1rem;
+    }
+
+    .feature p {
+        font-size: 0.9rem;
     }
 
     .feature-icon {
@@ -1137,7 +1154,16 @@ body {
 
     .btn-delivery {
         width: 100%;
-        max-width: 300px;
+        max-width: none;
+        padding: 1.2rem 2rem;
+    }
+
+    .delivery-text-main {
+        font-size: 1.1rem;
+    }
+
+    .delivery-text-sub {
+        font-size: 0.85rem;
     }
 
     .map-container {
@@ -1185,13 +1211,22 @@ body {
     }
 
     .social-buttons {
-        flex-direction: column;
-        gap: 0.8rem;
+        flex-direction: row;
+        gap: 1rem;
+        justify-content: flex-start;
     }
 
     .social-btn {
-        width: 100%;
+        flex: 1;
+        max-width: 48%;
         justify-content: center;
+        padding: 0.8rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .social-btn svg {
+        width: 20px;
+        height: 20px;
     }
 }
 
@@ -1249,6 +1284,22 @@ body {
         padding: 1.2rem 1.5rem;
     }
 
+    .about-text h3 {
+        font-size: 1.3rem;
+    }
+
+    .about-text p {
+        font-size: 0.9rem;
+    }
+
+    .feature h3 {
+        font-size: 1rem;
+    }
+
+    .feature p {
+        font-size: 0.85rem;
+    }
+
     /* Menu */
     .category-btn {
         padding: 0.6rem 1rem;
@@ -1290,12 +1341,26 @@ body {
         padding: 0.9rem;
     }
 
+    .btn-delivery {
+        padding: 1rem 1.5rem;
+    }
+
     .delivery-text-main {
         font-size: 1rem;
     }
 
     .delivery-text-sub {
         font-size: 0.75rem;
+    }
+
+    .social-btn {
+        padding: 0.7rem 0.8rem;
+        font-size: 0.85rem;
+    }
+
+    .social-btn svg {
+        width: 18px;
+        height: 18px;
     }
 
     .map-container h3 {
