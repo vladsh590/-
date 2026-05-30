@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тяньгоу - Азиатское бистро</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <a href="#home" class="logo">
+                <img src="logo.png" alt="Тяньгоу" class="logo-img">
+                <span>Тяньгоу</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#menu">Меню</a></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+            <button class="burger-menu" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content fade-in">
+            <img src="logo.png" alt="Тяньгоу" class="hero-logo">
+            <h1 class="hero-title">Тяньгоу</h1>
+            <p class="hero-subtitle">Азиатское бистро</p>
+            <p class="hero-description">Аутентичная азиатская кухня: рамен, лапша, рисовая миска и авторские напитки</p>
+            <div class="hero-buttons">
+                <a href="#menu" class="btn-primary">Меню</a>
+                <a href="#contact" class="btn-secondary">Забронировать</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">О нас</h2>
+            <div class="about-intro animate-on-scroll">
+                <p>Кафе Тяньгоу - это место, где можно попробовать разнообразные блюда азиатской кухни, приготовленные профессиональным шеф-поваром. В меню представлены как классические, так и авторские рецепты.</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text animate-on-scroll">
+                    <h3>Добро пожаловать в Тяньгоу</h3>
+                    <p>Мы создали уникальное пространство, где традиции азиатской кухни встречаются с современной атмосферой. Каждое блюдо готовится с душой из свежих ингредиентов по аутентичным рецептам.</p>
+                    <p>Неоновые огни, уютная обстановка и ароматы азиатской кухни создают незабываемую атмосферу для встреч с друзьями и семьей.</p>
+                </div>
+                <div class="about-features">
+                    <div class="feature animate-on-scroll" style="animation-delay: 0.1s">
+                        <div class="feature-icon">
+                            <img src="icons/utensils.svg" alt="Кухня">
+                        </div>
+                        <h3>Аутентичная кухня</h3>
+                        <p>Традиционные рецепты из разных уголков Азии</p>
+                    </div>
+                    <div class="feature animate-on-scroll" style="animation-delay: 0.2s">
+                        <div class="feature-icon">
+                            <img src="icons/lamp-ceiling.svg" alt="Атмосфера">
+                        </div>
+                        <h3>Неоновая атмосфера</h3>
+                        <p>Современный дизайн с яркими акцентами</p>
+                    </div>
+                    <div class="feature animate-on-scroll" style="animation-delay: 0.3s">
+                        <div class="feature-icon">
+                            <img src="icons/icon-team.svg" alt="Команда">
+                        </div>
+                        <h3>Профессионалы</h3>
+                        <p>Опытные повара и заботливый сервис</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Наше меню</h2>
+            <p class="menu-subtitle animate-on-scroll">Выберите категорию, чтобы увидеть блюда</p>
+            
+            <!-- Menu Categories -->
+            <div class="menu-categories animate-on-scroll">
+                <button class="category-btn active" data-category="all">Все блюда</button>
+                <button class="category-btn" data-category="ramen">Рамен</button>
+                <button class="category-btn" data-category="noodles">Лапша</button>
+                <button class="category-btn" data-category="rice">Рисовая миска</button>
+                <button class="category-btn" data-category="snacks">Закуски</button>
+                <button class="category-btn" data-category="drinks">Напитки</button>
+                <button class="category-btn" data-category="desserts">Десерты</button>
+            </div>
+
+            <!-- Ramen -->
+            <!-- Ramen -->
+            <div class="menu-grid" data-category="ramen">
+                <div class="menu-item" data-image="photo/Ramen/Cheese ramen.jpg">
+                    <div class="menu-item-image">
+                        <img src="photo/Ramen/Cheese ramen.jpg" alt="Сырный рамен">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Сырный рамён</h3>
+                        <p>Половина (460гр) - 420 руб. Говяжий бульон с сыром, лапша,...</p>
+                        <div class="menu-item-footer">
+                            <span class="price">670 ₽</span>
+                            <span class="weight">800 г</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item" data-image="photo/Ramen/Ramen with chicken.jpg">
+                    <div class="menu-item-image">
+                        <img src="photo/Ramen/Ramen with chicken.jpg" alt="Рамен с курицей">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Рамён с курицей</h3>
+                        <p>Половина (400 гр) - 390р. Мясной бульон, пшеничная куриная...</p>
+                        <div class="menu-item-footer">
+                            <span class="price">620 ₽</span>
+                            <span class="weight">800 г</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item" data-image="photo/Ramen/Eddie Ramen.jpg">
+                    <div class="menu-item-image">
+                        <img src="photo/Ramen/Eddie Ramen.jpg" alt="Эдди Рамен">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Эдди Рамён</h3>
+                        <p>Говяжий бульон, телятина, домашняя лапша, маринованно...</p>
+                        <div class="menu-item-footer">
+                            <span class="price">690 ₽</span>
+                            <span class="weight">800 г</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fried Noodles -->
+            <div class="menu-grid" data-category="noodles">
+                <div class="menu-item" data-image="photo/Fried noodles/Homemade Chinese fried noodles with chicken.jpg">
+                    <div class="menu-item-image">
+                        <img src="photo/Fried noodles/Homemade Chinese fried noodles with chicken.jpg" alt="Жареная лапша с курицей">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Домашняя китайская лапша с курицей</h3>
+                        <p>Жареная лапша с сочной курицей и овощами</p>
+                        <div class="menu-item-footer">
+                            <span class="price">540 ₽</span>
+                            <span class="weight">390 г</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item" data-image="photo/Fried noodles/Homemade Chinese fried noodles with veal.jpg">
+                    <div class="menu-item-image">
+                        <img src="photo/Fried noodles/Homemade Chinese fried noodles with veal.jpg" alt="Жареная лапша с телятиной">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Домашняя китайская лапша с телятиной</h3>
+                        <p>Ароматная лапша с нежной телятиной</p>
+                        <div class="menu-item-footer">
+                            <span class="price">590 ₽</span>
+                            <span class="weight">390 г</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item" data-image="photo/Fried noodles/Korean Egg Noodles with Chicken.jpg">
+                    <div class="menu-item-image">
+                        <img src="photo/Fried noodles/Korean Egg Noodles with Chicken.jpg" alt="Корейская яичная лапша">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Корейская яичная лапша с курицей</h3>
+                        <p>Пикантная лапша в корейском стиле</p>
+                        <div class="menu-item-footer">
+                            <span class="price">460 ₽</span>
+                            <span class="weight">470 г</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item" data-image="photo/Fried noodles/Soba with Teriyaki Shrimp.jpg">
+                    <div class="menu-item-image">
+                        <img src="photo/Fried noodles/Soba with Teriyaki Shrimp.jpg" alt="Соба с креветками">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Соба с креветками терияки</h3>
+                        <p>Гречневая лапша с креветками в соусе терияки</p>
+                        <div class="menu-item-footer">
+                            <span class="price">590 ₽</span>
+                            <span class="weight">360 г</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item" data-image="photo/Fried noodles/Udon with squid.jpg">
+                    <div class="menu-item-image">
+                        <img src="photo/Fried noodles/Udon with squid.jpg" alt="Удон с кальмаром">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Удон с кальмаром</h3>
+                        <p>Толстая лапша удон с нежным кальмаром</p>
+                        <div class="menu-item-footer">
+                            <span class="price">420 ₽</span>
+                            <span class="weight">379 г</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Noodles in Broth -->
+            <div class="menu-grid" data-category="noodles">
+                <div class="menu-item" data-image="photo/Noodles in broth/Tom yam soup with shrimp.jpg">
+                    <div class="menu-item-image">
+                        <img src="photo/Noodles in broth/Tom yam soup with shrimp.jpg" alt="Суп том ям с креветками">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Суп том ям с креветками</h3>
+                        <p>Говяжий бульон, креветки, маринованные томат...</p>
+                        <div class="menu-item-footer">
+                            <span class="price">610 ₽</span>
+                            <span class="weight">500 г</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item" data-image="photo/Noodles in broth/Shrimp broth with wontons.jpg">
+                    <div class="menu-item-image">
+                        <img src="photo/Noodles in broth/Shrimp broth with wontons.jpg" alt="Креветочный бульон с вонтонами">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Креветочный бульон с вонтонами</h3>
+                        <p>Китайские пельмени с креветкой и курицей, пшеничная лапша,...</p>
+                        <div class="menu-item-footer">
+                            <span class="price">470 ₽</span>
+                            <span class="weight">520 г</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item" data-image="photo/Noodles in broth/Vegetable Curry Cream Soup.jpg">
+                    <div class="menu-item-image">
+                        <img src="photo/Noodles in broth/Vegetable Curry Cream Soup.jpg" alt="Овощной крем-суп карри">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Овощной крем-суп карри</h3>
+                        <p>Пшеничная лапша, грибы, кукуруза, копчёный тофу,...</p>
+                        <div class="menu-item-footer">
+                            <span class="price">410 ₽</span>
+                            <span class="weight">300 г</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item" data-image="photo/Noodles in broth/Tom yam soup with chicken.jpg">
+                    <div class="menu-item-image">
+                        <img src="photo/Noodles in broth/Tom yam soup with chicken.jpg" alt="Суп том ям с курицей">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Суп том ям с курицей</h3>
+                        <p>Говяжий бульон, маринованные томаты конкассе, курица,...</p>
+                        <div class="menu-item-footer">
+                            <span class="price">570 ₽</span>
+                            <span class="weight">500 г</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Rice Bowls -->
+            <div class="menu-grid" data-category="rice">
+                <div class="menu-item" data-image="photo/Rice bowl/Rice bowl with chicken and vegetables.jpg">
+                    <div class="menu-item-image">
+                        <img src="photo/Rice bowl/Rice bowl with chicken and vegetables.jpg" alt="Рисовая миска с цыплёнком и овощами">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Рисовая миска с цыплёнком и овощами</h3>
+                        <p>Жареное филе цыпленка в кисло-сладком...</p>
+                        <div class="menu-item-footer">
+                            <span class="price">490 ₽</span>
+                            <span class="weight">340 г</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item" data-image="photo/Rice bowl/Rice bowl with eggplant and tofu.jpg">
+                    <div class="menu-item-image">
+                        <img src="photo/Rice bowl/Rice bowl with eggplant and tofu.jpg" alt="Рисовая миска с баклажаном и тофу">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Рисовая миска с баклажаном и тофу</h3>
+                        <p>Баклажан, копчёный тофу, кисло-сладкий соус, рис, фундук,...</p>
+                        <div class="menu-item-footer">
+                            <span class="price">390 ₽</span>
+                            <span class="weight">310 г</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item" data-image="photo/Rice bowl/Rice bowl with salmon.jpg">
+                    <div class="menu-item-image">
+                        <img src="photo/Rice bowl/Rice bowl with salmon.jpg" alt="Рисовая миска с лососем">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Рисовая миска с лососем</h3>
+                        <p>Маринованный лосось, рис, авокадо, редис, томаты, соус лаймовы...</p>
+                        <div class="menu-item-footer">
+                            <span class="price">690 ₽</span>
+                            <span class="weight">360 г</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item" data-image="photo/Rice bowl/Curry with chicken.jpg">
+                    <div class="menu-item-image">
+                        <img src="photo/Rice bowl/Curry with chicken.jpg" alt="Карри с креветками">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Карри с креветками</h3>
+                        <p>Рис басмати, курица/ креветка, соус жёлтый карри, цукини,...</p>
+                        <div class="menu-item-footer">
+                            <span class="price">650 ₽</span>
+                            <span class="weight">280 г</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item" data-image="photo/Rice bowl/Curry with shrimp.jpg">
+                    <div class="menu-item-image">
+                        <img src="photo/Rice bowl/Curry with shrimp.jpg" alt="Карри с курицей">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Карри с курицей</h3>
+                        <p>Рис басмати, курица, соус жёлтый карри, цукини, болгарский...</p>
+                        <div class="menu-item-footer">
+                            <span class="price">590 ₽</span>
+                            <span class="weight">360 г</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item" data-image="photo/Rice bowl/Lean rice with chicken.jpg">
+                    <div class="menu-item-image">
+                        <img src="photo/Rice bowl/Lean rice with chicken.jpg" alt="Постный рис с курицей">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Постный рис с курицей</h3>
+                        <p>Курица, омлет, рис, чесночное масло, зелёный лук</p>
+                        <div class="menu-item-footer">
+                            <span class="price">490 ₽</span>
+                            <span class="weight">260 г</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item" data-image="photo/Rice bowl/Lean rice with shrimp.jpg">
+                    <div class="menu-item-image">
+                        <img src="photo/Rice bowl/Lean rice with shrimp.jpg" alt="Постный рис с креветками">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Постный рис с креветками</h3>
+                        <p>Креветки, омлет, рис, чесночное масло, зелёный лук</p>
+                        <div class="menu-item-footer">
+                            <span class="price">490 ₽</span>
+                            <span class="weight">260 г</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Snacks -->
+            <div class="menu-grid" data-category="snacks">
+                <div class="menu-item" data-image="photo/Snacks/Asian-style chicken salad.jpg">
+                    <div class="menu-item-image">
+                        <img src="photo/Snacks/Asian-style chicken salad.jpg" alt="Ролл в рисовой бумаге с лососем">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Ролл в рисовой бумаге с лососем</h3>
+                        <p>Маринованный лосось, авокадо, огурец, чука, икра масаго, соус...</p>
+                        <div class="menu-item-footer">
+                            <span class="price">590 ₽</span>
+                            <span class="weight">240 г</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item" data-image="photo/Snacks/Meat wontons.jpg">
+                    <div class="menu-item-image">
+                        <img src="photo/Snacks/Meat wontons.jpg" alt="Вонтоны с креветкой">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Вонтоны с креветкой</h3>
+                        <p>7шт, китайские пельмени с креветками и...</p>
+                        <div class="menu-item-footer">
+                            <span class="price">450 ₽</span>
+                            <span class="weight">190 г</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item" data-image="photo/Snacks/Oshizushi salmon.jpg">
+                    <div class="menu-item-image">
+                        <img src="photo/Snacks/Oshizushi salmon.jpg" alt="Осидзуси снежный краб">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Осидзуси снежный краб</h3>
+                        <p>Снежный краб, рис, васаби, икра масаго, имбирь</p>
+                        <div class="menu-item-footer">
+                            <span class="price">480 ₽</span>
+                            <span class="weight">250 г</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item" data-image="photo/Snacks/Large green salad with hazelnuts.jpg">
+                    <div class="menu-item-image">
+                        <img src="photo/Snacks/Large green salad with hazelnuts.jpg" alt="Большой зелёный салат с фундуком">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Большой зелёный салат с фундуком</h3>
+                        <p>Пекинская капуста, айсберг, авокадо, цукини, огурцы,...</p>
+                        <div class="menu-item-footer">
+                            <span class="price">420 ₽</span>
+                            <span class="weight">310 г</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item" data-image="photo/Snacks/Shrimp Calamari Tempura.jpg">
+                    <div class="menu-item-image">
+                        <img src="photo/Snacks/Shrimp Calamari Tempura.jpg" alt="Креветки кальмар темпура">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Креветки кальмар темпура</h3>
+                        <p>Кальмар, креветки, темпура, соус васаби</p>
+                        <div class="menu-item-footer">
+                            <span class="price">890 ₽</span>
+                            <span class="weight">290 г</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item" data-image="photo/Snacks/Krispy Rice.jpg">
+                    <div class="menu-item-image">
+                        <img src="photo/Snacks/Krispy Rice.jpg" alt="Криспи райс">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Криспи райс</h3>
+                        <p>Хрустящий рис, креветка, нори</p>
+                        <div class="menu-item-footer">
+                            <span class="price">420 ₽</span>
+                            <span class="weight">100 г</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item" data-image="photo/Snacks/Iceberg kim chi.jpg">
+                    <div class="menu-item-image">
+                        <img src="photo/Snacks/Iceberg kim chi.jpg" alt="Айсберг кимчи">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Айсберг кимчи</h3>
+                        <p>Кимчи из пекинской капусты</p>
+                        <div class="menu-item-footer">
+                            <span class="price">250 ₽</span>
+                            <span class="weight">100 г</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item" data-image="photo/Snacks/Asian-style chicken salad.jpg">
+                    <div class="menu-item-image">
+                        <img src="photo/Snacks/Asian-style chicken salad.jpg" alt="Салат с курицей в азиатском стиле">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Салат с курицей в азиатском стиле</h3>
+                        <p>Филе грудки, огурец, морковь, перец, болгарский, лук</p>
+                        <div class="menu-item-footer">
+                            <span class="price">420 ₽</span>
+                            <span class="weight">260 г</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item" data-image="photo/Snacks/Oshizushi the snow crab.jpg">
+                    <div class="menu-item-image">
+                        <img src="photo/Snacks/Oshizushi the snow crab.jpg" alt="Осидзуси лосось">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Осидзуси лосось</h3>
+                        <p>Тар тар из лосося, водоросли вакаме, васаби, рис</p>
+                        <div class="menu-item-footer">
+                            <span class="price">790 ₽</span>
+                            <span class="weight">220 г</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item" data-image="photo/Snacks/Burning wings.jpg">
+                    <div class="menu-item-image">
+                        <img src="photo/Snacks/Burning wings.jpg" alt="Жгучие крылья">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Жгучие крылья</h3>
+                        <p>Глазированные куриные крылья в сладко-остром соусе</p>
+                        <div class="menu-item-footer">
+                            <span class="price">520 ₽</span>
+                            <span class="weight">375 г</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item" data-image="photo/Snacks/Wontons with shrimp.jpg">
+                    <div class="menu-item-image">
+                        <img src="photo/Snacks/Wontons with shrimp.jpg" alt="Вонтоны мясные">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Вонтоны мясные</h3>
+                        <p>Мясные китайские пельмени, устричный соус</p>
+                        <div class="menu-item-footer">
+                            <span class="price">390 ₽</span>
+                            <span class="weight">190 г</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Drinks -->
+            <div class="menu-grid" data-category="drinks">
+                <div class="menu-item" data-image="photo/Drinks/Bubble tea strawberry matcha.jpg">
+                    <div class="menu-item-image">
+                        <img src="photo/Drinks/Bubble tea strawberry matcha.jpg" alt="Баббл ти клубничная матча">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Bubble tea клубничная матча</h3>
+                        <p>Клубничное пюре, чай с жасмином, джус болли, кокосовое молоко,...</p>
+                        <div class="menu-item-footer">
+                            <span class="price">390 ₽</span>
+                            <span class="weight">300 г</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item" data-image="photo/Drinks/Bubble tea creamy peach.jpg">
+                    <div class="menu-item-image">
+                        <img src="photo/Drinks/Bubble tea creamy peach.jpg" alt="Баббл ти сливочный персик">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Bubble tea сливочный персик</h3>
+                        <p>Чай с жасмином, джус болли, сырная пенка</p>
+                        <div class="menu-item-footer">
+                            <span class="price">390 ₽</span>
+                            <span class="weight">400 мл</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item" data-image="photo/Drinks/Bubble tea anchovy green melon.jpg">
+                    <div class="menu-item-image">
+                        <img src="photo/Drinks/Bubble tea anchovy green melon.jpg" alt="Баббл ти анчан зеленая дыня">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Bubble tea анчан зеленая дыня</h3>
+                        <p>Чай анчан, пюре зеленая дыня, кокосовое молоко,...</p>
+                        <div class="menu-item-footer">
+                            <span class="price">390 ₽</span>
+                            <span class="weight">400 мл</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item" data-image="photo/Drinks/Bubble tea caramel sundae.jpg">
+                    <div class="menu-item-image">
+                        <img src="photo/Drinks/Bubble tea caramel sundae.jpg" alt="Баббл ти карамель-пломбир">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Bubble tea карамель-пломбир</h3>
+                        <p>Тапиока, мисо-карамель, черный чай, молоко, шарик,...</p>
+                        <div class="menu-item-footer">
+                            <span class="price">390 ₽</span>
+                            <span class="weight">400 мл</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Desserts -->
+            <div class="menu-grid" data-category="desserts">
+                <div class="menu-item" data-image="photo/Desserts/Moti.jpg">
+                    <div class="menu-item-image">
+                        <img src="photo/Desserts/Moti.jpg" alt="Моти">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Моти</h3>
+                        <p>Соус на выбор: манго-ваниль или чёрная смородина-черника</p>
+                        <div class="menu-item-footer">
+                            <span class="price">290 ₽</span>
+                            <span class="weight">110 г</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item" data-image="photo/Desserts/Fried bananas.jpg">
+                    <div class="menu-item-image">
+                        <img src="photo/Desserts/Fried bananas.jpg" alt="Жареные бананы">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Жареные бананы</h3>
+                        <p>Бананы темпура, мисо-карамель, мусс лемонграсс-лайм</p>
+                        <div class="menu-item-footer">
+                            <span class="price">390 ₽</span>
+                            <span class="weight">190 г</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Контакты</h2>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <img src="icons/icon-location.svg" alt="Адрес">
+                        <div>
+                            <h3>Адрес</h3>
+                            <p>Уточните адрес на Яндекс.Картах</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <img src="icons/icon-phone.svg" alt="Телефон">
+                        <div>
+                            <h3>Телефон для брони</h3>
+                            <p><a href="tel:+79000000000" class="contact-link">+7 (900) 000-00-00</a></p>
+                            <p class="contact-note">Звоните для бронирования столика</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <img src="icons/icon-clock.svg" alt="Часы работы">
+                        <div>
+                            <h3>Часы работы</h3>
+                            <p>Ежедневно: 11:00 - 23:00</p>
+                        </div>
+                    </div>
+                    <div class="contact-item social-links">
+                        <img src="icons/icon-support.svg" alt="Соцсети">
+                        <div>
+                            <h3>Мы в соцсетях</h3>
+                            <div class="social-buttons">
+                                <a href="https://t.me/tiangou_b" target="_blank" rel="noopener noreferrer" class="social-btn telegram">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.161c-.18 1.897-.962 6.502-1.359 8.627-.168.9-.5 1.201-.82 1.23-.697.064-1.226-.461-1.901-.903-1.056-.692-1.653-1.123-2.678-1.799-1.185-.781-.417-1.21.258-1.911.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.139-5.062 3.345-.479.329-.913.489-1.302.481-.428-.009-1.252-.242-1.865-.442-.752-.244-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.831-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635.099-.002.321.023.465.141.121.099.155.232.171.326.016.094.036.308.02.475z"/>
+                                    </svg>
+                                    Telegram
+                                </a>
+                                <a href="https://vk.com/tiangou.bistro" target="_blank" rel="noopener noreferrer" class="social-btn vk">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm6.066 13.163c.603.601 1.238 1.167 1.735 1.814.214.279.415.566.555.898.197.467.009.98-.405 1.009h-2.669c-.688.057-1.237-.217-1.694-.673-.36-.36-.691-.735-1.031-1.108-.144-.158-.293-.304-.477-.408-.348-.197-.652-.122-.854.247-.207.373-.254.787-.271 1.202-.024.645-.191.814-.841.844-1.386.065-2.704-.144-3.94-.931-1.067-.68-1.887-1.591-2.606-2.626-.14-.201-.267-.41-.396-.618-1.399-2.265-2.47-4.718-3.421-7.238-.19-.504.006-.773.555-.782.915-.015 1.83-.013 2.744-.001.371.005.607.236.744.577.449 1.119.99 2.192 1.679 3.184.177.255.357.51.608.686.283.199.5.142.638-.177.089-.206.127-.427.146-.648.064-.737.072-1.473-.041-2.205-.073-.478-.338-.788-.815-.887-.244-.051-.208-.15-.09-.302.193-.249.375-.404.738-.404h2.744c.432.085.528.279.587.713l.002 3.042c-.005.169.084.671.388.783.244.089.406-.114.553-.262.663-.668 1.136-1.462 1.562-2.283.188-.362.349-.738.504-1.116.116-.283.297-.423.617-.416l2.874.003c.085 0 .171.001.254.016.467.084.595.298.447.752-.211.647-.61 1.185-1.013 1.719-.426.565-.884 1.106-1.311 1.672-.392.52-.362.782.122 1.241z"/>
+                                    </svg>
+                                    ВКонтакте
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Забронировать столик</h3>
+                    
+                    <!-- Delivery Button -->
+                    <a href="https://eda.yandex.ru/r/tan_gou?placeSlug=tyangou" target="_blank" rel="noopener noreferrer" class="btn-delivery delivery-large">
+                        <span class="delivery-text-main">Заказать доставку</span>
+                        <span class="delivery-text-sub">через Яндекс Еду</span>
+                    </a>
+                    
+                    <div class="form-divider">
+                        <span>или забронируйте столик</span>
+                    </div>
+                    
+                    <form>
+                        <input type="text" placeholder="Ваше имя" required>
+                        <input type="tel" placeholder="Телефон" required>
+                        <input type="email" placeholder="Email">
+                        <input type="datetime-local" placeholder="Дата и время">
+                        <input type="number" placeholder="Количество гостей" min="1">
+                        <textarea placeholder="Комментарий"></textarea>
+                        <button type="submit" class="btn-primary">Забронировать</button>
+                    </form>
+                </div>
+            </div>
+            
+            <!-- Yandex Map -->
+            <div class="map-container">
+                <h3>Как нас найти</h3>
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa44ed5f503d4f7aa0fc513fd487a476418fcce035a26633aa27a74f238c60f2d&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="logo.png" alt="Тяньгоу" class="footer-logo-img">
+                    <span>Тяньгоу</span>
+                </div>
+                <p>&copy; 2026 Тяньгоу. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="scroll-to-top" aria-label="Наверх">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="modal">
+        <span class="modal-close">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div class="modal-caption"></div>
+        <div class="modal-controls">
+            <button class="zoom-btn" id="zoomIn">+</button>
+            <button class="zoom-btn" id="zoomOut">-</button>
+            <button class="zoom-btn" id="resetZoom">⟲</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
