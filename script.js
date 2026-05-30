@@ -55,7 +55,8 @@ categoryButtons.forEach(button => {
         // Wait for fade out, then show/hide
         setTimeout(() => {
             menuGrids.forEach(grid => {
-                if (category === 'all') {
+                const gridCategory = grid.getAttribute('data-category');
+                if (gridCategory === category) {
                     grid.classList.add('active');
                     grid.style.display = 'grid';
                     // Trigger reflow
@@ -63,31 +64,26 @@ categoryButtons.forEach(button => {
                     grid.style.opacity = '1';
                     grid.style.transform = 'translateY(0)';
                 } else {
-                    const gridCategory = grid.getAttribute('data-category');
-                    if (gridCategory === category) {
-                        grid.classList.add('active');
-                        grid.style.display = 'grid';
-                        // Trigger reflow
-                        grid.offsetHeight;
-                        grid.style.opacity = '1';
-                        grid.style.transform = 'translateY(0)';
-                    } else {
-                        grid.classList.remove('active');
-                        grid.style.display = 'none';
-                    }
+                    grid.classList.remove('active');
+                    grid.style.display = 'none';
                 }
             });
         }, 300);
     });
 });
 
-// Initialize - show all items with transition
+// Initialize - show only ramen by default
 menuGrids.forEach(grid => {
-    grid.classList.add('active');
-    grid.style.display = 'grid';
     grid.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
-    grid.style.opacity = '1';
-    grid.style.transform = 'translateY(0)';
+    const gridCategory = grid.getAttribute('data-category');
+    if (gridCategory === 'ramen') {
+        grid.classList.add('active');
+        grid.style.display = 'grid';
+        grid.style.opacity = '1';
+        grid.style.transform = 'translateY(0)';
+    } else {
+        grid.style.display = 'none';
+    }
 });
 
 // Header Background on Scroll and Scroll to Top Button
